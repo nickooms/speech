@@ -6,6 +6,7 @@ console.log(speechSynthesis.getVoices());
   const final_span = document.querySelector('span#final');
   const interim_span = document.querySelector('span#interim');
   const start_button = document.querySelector('button#start');
+  const stop_button = document.querySelector('button#stop');
   const select_language = document.querySelector('select#select_language');
   const select_dialect = document.querySelector('select#select_dialect');
 
@@ -128,7 +129,6 @@ function startButton(event) {
 
 function stopButton(event) {
   recognition.stop();
-
 }
 
 document.addEventListener('DOMContentLoaded', init);
