@@ -126,8 +126,9 @@ function startButton(event) {
   recognition.start();
 }
 
-function stopButton(event) 
+function stopButton(event) {
   recognition.stop();
+
 }
 
 document.addEventListener('DOMContentLoaded', init);
