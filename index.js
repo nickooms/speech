@@ -1,12 +1,13 @@
 var recognition;
-
+let start_button;
+let stop_button;
 const init = () => {
   const voices = speechSynthesis.getVoices();//.map(x => x);
-console.log(speechSynthesis.getVoices());
+// console.log(speechSynthesis.getVoices());
   const final_span = document.querySelector('span#final');
   const interim_span = document.querySelector('span#interim');
-  const start_button = document.querySelector('button#start');
-  const stop_button = document.querySelector('button#stop');
+  start_button = document.querySelector('button#start');
+  stop_button = document.querySelector('button#stop');
   const select_language = document.querySelector('select#select_language');
   const select_dialect = document.querySelector('select#select_dialect');
 
