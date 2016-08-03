@@ -117,12 +117,17 @@ function updateCountry() {
     };
   }
   start_button.addEventListener('click', startButton);
+  stop_button.addEventListener('click', stopButton);
 }
 
 function startButton(event) {
   final_transcript = '';
   recognition.lang = select_dialect.value;
   recognition.start();
+}
+
+function stopButton(event) 
+  recognition.stop();
 }
 
 document.addEventListener('DOMContentLoaded', init);
