@@ -1,3 +1,5 @@
+var recognition;
+
 const init = () => {
   const voices = speechSynthesis.getVoices();//.map(x => x);
 console.log(speechSynthesis.getVoices());
@@ -8,7 +10,7 @@ console.log(speechSynthesis.getVoices());
   if (!('webkitSpeechRecognition' in window)) {
     console.log(666);
   } else {
-    var recognition = new webkitSpeechRecognition();
+    recognition = new webkitSpeechRecognition();
     recognition.continuous = true;
     recognition.interimResults = true;
 
